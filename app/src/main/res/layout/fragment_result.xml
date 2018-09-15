@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.darkholds.lca.ResultFragment">
+    <TextView
+        android:id="@+id/txtResultTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dispborder"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="12pt"
+        android:textColor="#f3a210"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:text="RESULT" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dispborder"
+        android:layout_margin="20dp"
+        android:textSize="12pt"
+        android:padding="20dp"
+        android:layout_below="@+id/txtResultTitle"
+        android:textColor="@android:color/white"
+        android:text="RESULT" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btnStartOver"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/start_over"
+            android:padding="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:background="?android:selectableItemBackground"
+            android:text="Start Over" />
+        <ImageButton
+            android:id="@+id/btnExit"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/exit"
+            android:backgroundTint="@android:color/darker_gray"
+            android:background="?android:selectableItemBackground"
+            android:text="Exit" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.darkholds.lca.SettingsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="12pt"
+        android:background="@drawable/dispborder"
+        android:text="Planting Method"
+        android:padding="10dp"
+        android:textColor="#f3a210"
+        android:id="@+id/textView" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/textView"
+        android:padding="20dp"
+        android:background="@drawable/dispborder"
+        android:id="@+id/radioGroup" >
+        <RadioButton
+            android:id="@+id/rbTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:layout_toStartOf="@+id/radioGroup"
+            android:checked="true"
+            android:textColor="@android:color/white"
+            android:text="Transplanted" />
+        <RadioButton
+            android:id="@+id/rbDWS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:layout_toStartOf="@+id/radioGroup"
+            android:textColor="@android:color/white"
+            android:text="Direct Wet-Seeded" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Planting Season"
+        android:textSize="12pt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:textColor="#f3a210"
+        android:background="@drawable/dispborder"
+        android:layout_below="@+id/radioGroup"
+        android:id="@+id/textView2" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dispborder"
+        android:padding="20dp"
+        android:layout_below="@+id/textView2"
+        android:id="@+id/radioGroup2" >
+        <RadioButton
+            android:id="@+id/rbDrySeason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/radioGroup"
+            android:textColor="@android:color/white"
+            android:textSize="10pt"
+            android:checked="true"
+            android:text="Dry Season"/>
+        <RadioButton
+            android:id="@+id/rbWetSeason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@android:color/white"
+            android:layout_toStartOf="@+id/radioGroup"
+            android:text="Wet Season" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/radioGroup2"
+        android:background="@drawable/dispborder"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Land Area (ha.)"
+            android:textColor="#f3a210"
+            android:textSize="10pt"
+            android:layout_below="@+id/radioGroup2"
+            android:id="@+id/textView3" />
+        <EditText
+            android:id="@+id/txtLandArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:ems="10"
+            android:layout_below="@+id/textView3"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnGather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/capture_sample"
+        android:backgroundTint="@android:color/darker_gray"
+        android:background="?android:selectableItemBackground"
+        android:text="Gather Leaf Sample" />
+</RelativeLayout>

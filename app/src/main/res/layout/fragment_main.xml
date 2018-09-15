@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:paddingBottom="30dp"
+    tools:context="com.example.darkholds.lca.MainFragment">
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/start"
+        android:backgroundTint="@android:color/darker_gray"
+        android:background="?android:selectableItemBackground"
+        android:text="Start" />
+</RelativeLayout>
