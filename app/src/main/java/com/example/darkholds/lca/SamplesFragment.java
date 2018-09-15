@@ -100,8 +100,8 @@ public class SamplesFragment extends Fragment {
                                 sample[9]=((BitmapDrawable) img10.getDrawable()).getBitmap();
                                 break;
                         }
-
                     }
+
                     ImagePro proc = new ImagePro(sample);
                     int x = proc.getAverageColor();
                     FLogic fl = new FLogic(x);

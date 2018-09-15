@@ -66,9 +66,14 @@ public class ImagePro {
             }
         }
 
-        int green = greenPixelAccumulator/numPixels;
-        int red = redPixelAccumulator/numPixels;
-        int blue = bluePixelAccumulator/numPixels;
+        int green = 0;
+        int red = 0;
+        int blue = 0;
+        if(numPixels>0){
+            green = greenPixelAccumulator/numPixels;
+            red = redPixelAccumulator/numPixels;
+            blue = bluePixelAccumulator/numPixels;
+        }
 
         int aveColor = Color.argb(0,red,green,blue);
         return aveColor;

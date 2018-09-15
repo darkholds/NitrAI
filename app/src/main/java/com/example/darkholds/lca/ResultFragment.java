@@ -87,6 +87,8 @@ public class ResultFragment extends Fragment {
             sb.append("\n" + "Too much Nitrogen fertilizer. Use \n" + nFert + " kg of N and " +  urea + " bags of urea next time");
         else if(Globals.plantMethod==0  && Globals.reading>4)
             sb.append("\n" + "Too much Nitrogen fertilizer. Use \n" + nFert + " kg of N and " + urea + " bags of urea next time");
+        else
+            sb.append("\nBad samples");
 
         txtResult.setText(sb.toString());
         return rootView;
